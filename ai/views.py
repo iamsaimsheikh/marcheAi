@@ -44,4 +44,4 @@ class tags(APIView):
         npDec = np.array([response])
         result = npDec.flatten().tolist()
 
-        return JsonResponse(result)
+        return Response(result)
